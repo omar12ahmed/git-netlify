@@ -5,7 +5,7 @@ const CharacterGallery = () => {
 
     return (<div>
         {characterData.map((character) => (
-            <Character key={character.id} name={character.name} 
+            <Character key={character.id} {...character} name={character.name} imgUrl={character.imgUrl}
             
             />
         ))}

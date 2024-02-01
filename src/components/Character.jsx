@@ -1,16 +1,17 @@
-function Character(props){
-    // ({name, imageUrl, birth, })
+function Character({name, imgUrl, birth, death, race, realm, spouse }){
+    console.log({name, imgUrl, birth, death, race, realm, spouse })
+    // ({name, imageUrl, birth, death, race, realm, spouse })
     return(
 
         <div>
-            <h2>{props.name}</h2>
-            <img src={props.imgUrl} alt="" />
+            <h2>{name}</h2>
+            <img src={imgUrl} alt="" />
             <ul>
-                <li>Date of Birth: {props.birth}</li>
-                <li>Date of Death: {props.death}</li>
-                <li>Race: {props.race}</li>
-                <li>Realm: {props.realm}</li>
-                <li>Spouse: {props.spouse} </li>
+                <li>Date of Birth: {birth}</li>
+                <li>Date of Death: {death}</li>
+                <li>Race: {race}</li>
+                <li>Realm: {realm}</li>
+                <li>Spouse: {spouse} </li>
 
             </ul>
         </div>
